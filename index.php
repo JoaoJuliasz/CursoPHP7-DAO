@@ -27,8 +27,28 @@ echo $root;
 
 //carrega um usuario usando login e senha
 
-$user = new Usuario();
+// $user = new Usuario();
 
-$user->login("user", "12345");
+// $user->login("user", "12345");
 
-echo $user;
+// echo $user;
+
+
+//insert de novo usuario
+
+// $aluno = new Usuario("aluno", "@lun0");
+
+// $aluno->setDeslogin("aluno");
+// $aluno->setDessenha("@lun0");
+
+// $aluno->insert();
+
+// echo $aluno;
+
+$usuario = new Usuario();
+
+$usuario->loadById(4);
+
+$usuario->update("professor", "%!&¨#&*");
+
+echo $usuario;
