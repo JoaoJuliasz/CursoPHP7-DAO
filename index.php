@@ -45,10 +45,17 @@ echo $root;
 
 // echo $aluno;
 
-$usuario = new Usuario();
+// $usuario = new Usuario();
 
-$usuario->loadById(4);
+// $usuario->loadById(4);
 
-$usuario->update("professor", "%!&¨#&*");
+// $usuario->update("professor", "%!&¨#&*");
 
-echo $usuario;
+// echo $usuario;
+
+$user = new Usuario();
+
+$user->loadById(7);
+
+$user->delete();
+echo $user;
